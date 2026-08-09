@@ -8,9 +8,9 @@
 }
 
 body,html {
-    background-color: purple;
-    width: 100vw;
-    height: 100vh;
+  background-color: purple;
+  width: 100vw;
+  height: 100vh;
 }
 
  main {
@@ -25,7 +25,6 @@ body,html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
 
   background-color: white;
@@ -36,6 +35,7 @@ body,html {
 
   transition: width .3s, height .3s;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 #login > #imagem {
@@ -62,14 +62,39 @@ body,html {
 
 form > .campo {
   background-color: #5E3384;
+  border: 2px solid #5E3384;
+  display: block;
   width: 100%;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 5px 0;
 }
 
 form label {
   display: none;
+}
+
+.campo > span {
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+
+.campo > input {
+  background-color: #7fccddde;
+  font-size: 1em;
+  width: calc(100% - 44px);
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px;
+  transform: translateY(-14px);
+}
+
+.campo > input:focus-within {
+  background-color: white;
 }
 
 form > input[type=submit] {
@@ -80,13 +105,14 @@ form > input[type=submit] {
   background-color: #5ea6b6;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 form > input[type=submit]:hover {
   background-color: #3f6972;
   cursor: cell;
 } 
+
 
 form > a.buttom {
   display: block;
