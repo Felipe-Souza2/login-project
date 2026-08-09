@@ -1,5 +1,45 @@
 @charset "UTF-8";
 
-/*body {
-  background-image: linear-gradient( to top, #4D8F99, #5E3083);
+@media screen and (min-width:768px) and (max-width:992px) {
+  body {
+    background-image: linear-gradient(to top, #4D8997, #097CBD, #5E3384 );
+  }
+  #login {
+    width: 90vw;
+  }
+  
+  #login > #imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #login > #formulario {
+    float: right;
+    width: 70%;
+    height: 100%;
+  }
+}
+
+
+@media screen and (min-width:992px) {
+  body {
+        background-image: linear-gradient(to top, #4D8997, #097CBD, #5E3384 );
+  }
+  #login {
+    width: 900px;
+  }
+
+  #login > #imagem {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  #login > #formulario {
+    float:right;
+    width: 50%;
+    height: 100%;
+  }
+
 }
