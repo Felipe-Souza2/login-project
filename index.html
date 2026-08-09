@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="stylesheet" href="estilos/landscape.css">
   li
@@ -18,12 +19,18 @@
         <h1>Login</h1>
         <p>Seja bem vindo(a) novamente. Faca login para acessar sua conta e pode fazer as configuracoes do seu ambiente</p>
         <form action="login.php" method="post" autocomplete="on">
-          <label for="inome">email</label>
-          <input type="email" name="nome" id="inome" required minlength="11" placeholder="E-mail"><br>
-          <label for="isen">password</label>
-          <input type="password" name="sen" id="isen" required minlength="10" placeholder="Senha"><br>
+          <div class="campo">
+            <span class="material-symbols-outlined">person</span>
+            <input type="email" name="nome" id="inome" required minlength="11" placeholder="E-mail" autocomplete="email">
+            <label for="inome">Login</label>
+          </div>
+          <div class="campo">
+           <span class="material-symbols-outlined">vpn_key</span>
+            <input type="password" name="sen" id="isen" required minlength="10" placeholder="Senha" autocomplete="current-password">
+             <label for="isen">password</label>
+          </div>
           <input type="submit" value="Entrar"><br>
-          <input type="submit" value="Esqueci a senha">
+          <a href="Esqueci a senha"> Esqueci a Senha  <span class="material-symbols-outlined">mail</span></a>
         </form>
       </div>
     </section>
